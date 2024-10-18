@@ -63,7 +63,7 @@ import MarkdownDisplay from '../components/MarkdownComponent';
         <p>post request the audio file to this url "https://audiocloudapi.onrender.com"</p>
         <p>response will be a url</p>
         <p>keep files on the smaller side under 5mb</p>
-        <p>Files are meant to be super temporary (30s) and for stiching uncooperative libraries together as a middleware</p>
+        <p>Files are meant to be super temporary (30min) and for stiching uncooperative libraries together as a middleware</p>
         <p>meaning that files delete soon after fetching them and the urls will go dead</p>
         <p>easy peasy</p>
         <p>If you need more persistant storage use a dedicated cloud, not this.</p>

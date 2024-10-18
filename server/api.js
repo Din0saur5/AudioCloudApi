@@ -69,8 +69,8 @@ app.post('/', async (req, res) => {
     }
 
     async function waitAndRemoveFiles(filePath) {
-        // Wait for 2 minutes (120,000 milliseconds)
-        await new Promise(resolve => setTimeout(resolve, 30000));
+        
+        await new Promise(resolve => setTimeout(resolve, 1800000));
 
         // Run the Supabase remove function
         try {
