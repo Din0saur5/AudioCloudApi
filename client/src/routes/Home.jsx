@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import fetchOne from '../components/fetchOne.md'
 import fetchTwo from '../components/fetchTwo.md'
+import response from '../components/response.md';
 import '../App.css';
 import MarkdownDisplay from '../components/MarkdownComponent';
 
@@ -76,17 +77,17 @@ import MarkdownDisplay from '../components/MarkdownComponent';
         </form>
         <br/>
         <p><b>URL displays here:</b></p>
-        <br/>
-        <br/>
-        <div className=''>
+        
+        <div className='url-container'>
         {url&&<a href={url}>{url}</a>
         }</div> 
-        <br/><br/>
-        <h2>Examples:</h2>
         <br/>
+        <h2>Examples:</h2>
         <MarkdownDisplay mdFile={fetchOne}></MarkdownDisplay>
         <p>If you dont want to use a downloaded audio file from the computer, but rather you are getting an audio blob directly from another api or other dynamic source set the value for str8Pipe to true in your fetch and use the blob itself rather than the local url. Example below:</p>
         <MarkdownDisplay mdFile={fetchTwo}></MarkdownDisplay>
+        <br/>
+        <MarkdownDisplay mdFile={response}></MarkdownDisplay>
       </div>
       )
     }
