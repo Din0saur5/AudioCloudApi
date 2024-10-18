@@ -64,21 +64,23 @@ import MarkdownDisplay from '../components/MarkdownComponent';
         <p>response will be a url</p>
         <p>easy peasy</p>
         <p>keep files on the smaller side under 5mb</p>
-        <p>Files are meant to be super temporary and for stiching uncooperative libraries together as a middleware</p>
+        <p>Files are meant to be super temporary (30s) and for stiching uncooperative libraries together as a middleware</p>
         <p>meaning that files delete soon after fetching them and the urls will go dead</p>
         <p>If you need more persistant storage go look for your own cloud.</p>
         <h3>If this is useful to you and you want to send me a donation to keep this thing running my cashapp is <b>$flipz4650</b></h3>
         <br/><br/>
-        <h2>test</h2>
+        <h2>Test</h2>
         <form onSubmit={(e)=>handleSubmit(e)}>
         <input className="file-input file-input-bordered file-input-sm w-full max-w-xs" onChange={handleFileChange} type="file" name="audio" accept="audio/*" id='filePicker' />
-        <button type='submit'>Test uploads</button>
+        <button type='submit'>Go!</button>
         </form>
         <br/>
         <p><b>URL displays here:</b></p>
         <br/>
-        <br/> {url&&<a href={url}>{url}</a>
-        }
+        <br/>
+        <div className=''>
+        {url&&<a href={url}>{url}</a>
+        }</div> 
         <br/><br/>
         <h2>Examples:</h2>
         <br/>

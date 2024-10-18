@@ -1,4 +1,4 @@
-## When sending the audio blob directly for a url
+## When sending the audio blob directly
 
 ```javascript
 fetch("http://localhost:5001/", {
