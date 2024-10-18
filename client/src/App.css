@@ -100,7 +100,9 @@
 
       a {
         color: #f0f6fc;
+        text-decoration: none;
       }
       a:hover{
         color: #f0f6fc;
+        text-decoration: underline;
       }
