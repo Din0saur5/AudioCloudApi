@@ -1,4 +1,6 @@
 # Api to temporarily host small audio files
+## This is meant to be an open source project so use it as you wish, let me know if there are any issues
+## webiste with demo: [https://tempaudiocloud.onrender.com/](https://tempaudiocloud.onrender.com/)
 
           fetch('http://localhost:5001/', {
             method: 'POST',
