@@ -26,9 +26,7 @@ app.post('/', async (req, res) => {
     // Middleware for POST request body is added to parse `req.body`
     const file = req.body.file;
 
-    if (!file || !file.url || !file.name) {
-        return res.status(400).json({ error: 'Invalid file object. Make sure to include "url" and "name".' });
-    }
+ 
 
     async function uploadFile(file) {
         async function getBlobFromUrl(blobUrl) {
@@ -46,11 +44,17 @@ app.post('/', async (req, res) => {
             let fileName = '';
 
             if (file.str8Pipe === false) {
+                if (!file || !file.url || !file.name) {
+                    return res.status(400).json({ error: 'Invalid file object. Make sure to include "url" and "name".' });
+                }
                 const fileExt = file.name.split('.').pop();
                 fileName = `${file.name.split('.').shift()}${Math.random()}.${fileExt}`;
 
                 fileBlob = await getBlobFromUrl(file.url);
             } else {
+                if (!file || !file.blob || !file.name) {
+                    return res.status(400).json({ error: 'Invalid file object. Make sure to include "blob" and "name".' });
+                }
                 fileName = file.name;
                 fileBlob = file.blob;
             }
