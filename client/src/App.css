@@ -84,9 +84,18 @@
       }
      
       .url-container {
-        height: 1.5rem;
+        height: 2.5rem;
+        padding: 0.25rem;
+        border-width: 1px;
+        border-color: #2c2c2f;
         min-width: 60dvw;
-        background-color:#555;
+        background-color: #151b23;
+        color: #f0f6fc;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+     
       }
 
       a {
