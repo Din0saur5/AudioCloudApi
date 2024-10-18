@@ -39,7 +39,7 @@ import MarkdownDisplay from '../components/MarkdownComponent';
 
     const handleSubmit =  (e) => {
       e.preventDefault()
-      fetch('/api', {
+      fetch('https://audiocloudapi.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -61,13 +61,14 @@ import MarkdownDisplay from '../components/MarkdownComponent';
       return (
         <div className='home'>
         <h1>Docs:</h1>
-        <p>post request the audio file to this url ""</p>
+        <p>post request the audio file to this url "https://audiocloudapi.onrender.com"</p>
         <p>response will be a url</p>
-        <p>easy peasy</p>
         <p>keep files on the smaller side under 5mb</p>
         <p>Files are meant to be super temporary (30s) and for stiching uncooperative libraries together as a middleware</p>
         <p>meaning that files delete soon after fetching them and the urls will go dead</p>
-        <p>If you need more persistant storage go look for your own cloud.</p>
+        <p>easy peasy</p>
+        <p>If you need more persistant storage use a dedicated cloud, not this.</p>
+
         <h3>If this is useful to you and you want to send me a donation to keep this thing running my cashapp is <b>$flipz4650</b></h3>
         <br/><br/>
         <h2>Test</h2>
