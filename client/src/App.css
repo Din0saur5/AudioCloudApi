@@ -3,7 +3,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-family: "Open Sans", sans-serif;
+    
       }
       
       /*scroll bar fun*/
@@ -31,11 +31,11 @@
       /* base page*/
       .home{
         display: flex;
-        height: 120vh;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 3rem;
-        background-color: #19191a;
+     
+        background-color: #3d3d3f;
         color: #fff;
         overflow-x: hidden;
       }
@@ -52,4 +52,21 @@
           width: 100%;
         }
       }
-    
+      .markdown-container {
+        padding: 1rem;
+        line-height: 1.6;
+      }
+      
+      .markdown-container h1 {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+      }
+      
+      .markdown-container ul {
+        padding-left: 1.5rem;
+      }
+
+      p {
+        padding-left: 20%;
+        padding-right: 20%;
+      }

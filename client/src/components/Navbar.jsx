@@ -24,7 +24,7 @@
                     <Link to="/" className='navbar-logo' onClick={closeMobileMenu} style={{'marginBottom': '2%'}}>
                         <GiAbstract049 className='navbar-icon'
                         />
-                        Hackworth
+                        TempAudioCloud Api
                     </Link>
                     <div className="menu-icon" onClick={handleClick}>
                       {click? <FaTimes/>:<FaBars/>}
@@ -32,7 +32,7 @@
                     <ul className={click? "nav-menu active": "nav-menu"}>
                       <li className='nav-item'>
                         <NavLink to="/" className={({ isActive }) => "nav-links" + (isActive? " activated": '')} onClick={closeMobileMenu}>
-                          Home
+                          Docs
                         </NavLink>
                       </li>
                     </ul>

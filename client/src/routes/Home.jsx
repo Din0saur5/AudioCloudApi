@@ -1,8 +1,9 @@
 
-    import { useState } from 'react'
-   
-    import '../App.css';
-import MarkdownComponent from '../components/MarkdownComponent';
+import { useState } from 'react'
+import fetchOne from '../components/fetchOne.md'
+import fetchTwo from '../components/fetchTwo.md'
+import '../App.css';
+import MarkdownDisplay from '../components/MarkdownComponent';
 
     const Home = () => {
       const [currentInput, setCurrentInput] = useState({
@@ -57,8 +58,8 @@ import MarkdownComponent from '../components/MarkdownComponent';
    
 
       return (
-        <>
-        <h1>Docs for AudioCloud Api</h1>
+        <div className='home'>
+        <h1>Docs:</h1>
         <p>post request the audio file to this url ""</p>
         <p>response will be a url</p>
         <p>easy peasy</p>
@@ -79,11 +80,12 @@ import MarkdownComponent from '../components/MarkdownComponent';
         <br/> {url&&<a href={url}>{url}</a>
         }
         <br/><br/>
-        <h2>examples of fetches</h2>
-        <MarkdownComponent></MarkdownComponent>
-        
-
-      </>
+        <h2>Examples:</h2>
+        <br/>
+        <MarkdownDisplay mdFile={fetchOne}></MarkdownDisplay>
+        <p>If you dont want to use a downloaded audio file from the computer, but rather you are getting an audio blob directly from another api or other dynamic source set the value for str8Pipe to true in your fetch and use the blob itself rather than the local url. Example below:</p>
+        <MarkdownDisplay mdFile={fetchTwo}></MarkdownDisplay>
+      </div>
       )
     }
     
