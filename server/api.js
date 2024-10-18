@@ -6,16 +6,22 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 5001;
 app.use(cors()); 
+
+
 const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseAnonKey = process.env.SUPABASE_ANON;
 // Connect your supabase account and sanitize variables
 const supabase = createClient(supabaseUrl, supabaseAnonKey);
-const { randomUUID } = require('crypto');
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Define your API routes here
+
+
+
+
 app.post('/', async (req, res) => {
     // Middleware for POST request body is added to parse `req.body`
     const file = req.body.file;

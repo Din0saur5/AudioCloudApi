@@ -8,17 +8,18 @@ export default defineConfig({
   assetsInclude: ['**/*.md'],
   build: {
     assetsDir: 'static',
+    
   },
-  server: {
-    port: 5173,
-    cors: true,
-    proxy: {
-      "/api": {
-        target: "http://localhost:5001/",
-        changeOrigin: true,
-        secure: false,
-        rewrite: (path) => path.replace(/^\/api/, ""),
-      },
-    },
-  },
+  // server: {
+  //   port: 5173,
+  //   cors: true,
+  //   proxy: {
+  //     "/api": {
+  //       target: "http://localhost:5001/",
+  //       changeOrigin: true,
+  //       secure: false,
+  //       rewrite: (path) => path.replace(/^\/api/, ""),
+  //     },
+  //   },
+  //},
 });
