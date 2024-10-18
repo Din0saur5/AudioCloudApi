@@ -50,7 +50,6 @@ import MarkdownDisplay from '../components/MarkdownComponent';
               str8Pipe: false
             }
         }),
-        credentials: 'include',
     })
     .then(response => response.json())
     .then(data =>setUrl(data.url))
