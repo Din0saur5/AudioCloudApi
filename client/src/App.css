@@ -86,6 +86,12 @@
       .url-container {
         height: 1.5rem;
         min-width: 60dvw;
-        background-color: #2c2c2f;
+        background-color:#555;
+      }
+
+      a {
+        color: #f0f6fc;
+      }
+      a:hover{
         color: #f0f6fc;
       }
