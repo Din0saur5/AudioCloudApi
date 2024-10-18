@@ -102,7 +102,7 @@
         color: #f0f6fc;
         text-decoration: none;
       }
-      a:hover{
+     .url-container a:hover{
         color: #f0f6fc;
         text-decoration: underline;
       }
